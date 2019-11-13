@@ -50,3 +50,69 @@ padding-left: 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.contact-elements {
+    text-align: center;
+}
+
+
+.contact-phone-square,
+.contact-email-square {
+    max-width: 48%;
+    background-color: #525252;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: 5px;
+    margin: 3px;
+    color: white;
+}
+
+
+.contact-phone-square:hover {
+    background-color: #525252;
+    color: white;
+}
+
+.contact-email-square:hover {
+    background-color: #525252;
+    color: white;
+}
+
+.contact-element-icon {
+    text-transform: uppercase;
+    color: #dadad3;
+    font-size: 36px;
+}
+
+.contact-element-icon:hover {
+    color: white;
+}
+
+.contact-element-icon a {
+    font-weight: bold;
+}
+
+.contact-element-icon>.active>a,
+.contact-element-icon>.active>a:focus,
+.contact-element-icon>.active>a:hover {
+    color: white;
+    background: transparent;
+}
+
+
+.contact-body-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    margin: 40px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.contact-items-body {
+    width: 100%;
+    display: flex;
+    padding-top: 25px;
+    padding: 5px;
+}
