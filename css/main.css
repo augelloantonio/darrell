@@ -1,48 +1,74 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
 }
 
-header, main {
-padding-left: 240px;
+header,
+main {
+    padding-left: 240px;
 }
 
 @media only screen and (max-width : 992px) {
-header, main, footer {
-padding-left: 0;
-}
+
+    header,
+    main,
+    footer {
+        padding-left: 0;
+    }
 }
 
-.carousel-container{
+#navbar {
+    transition: top 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover {
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: bold;
+}
+
+.carousel-container {
     max-height: 70vh;
 }
 
-.carousel-inner{
+.carousel-page-header {
     max-height: 70vh;
 }
 
-.carousel-item, .active{
+.d-block,
+.w-100 {
     max-height: 70vh;
 }
 
-.d-block, .w-100{
-    max-height: 70vh;
-}
-
-.card-cotainer{
-    padding:20px;
+.card-cotainer {
+    padding: 20px;
     margin-top: 40px;
 }
 
+.info-contact-container {
+    max-width: 75%;
+    margin: auto;
+}
+
+@media(max-width:772px) {
+    .info-contact-container {
+        max-width: 100%;
+
+    }
+}
+
 /* cards */
-.card-user{
+.card-user {
     text-align: center;
     border: none;
     box-shadow: none;
 }
 
-.img-author{
+.card-deck {
+    padding: 10px;
+}
+
+.img-author {
     border-radius: 50%;
     border: solid 1px black;
     max-width: 200px;
@@ -57,26 +83,30 @@ padding-left: 0;
 
 .contact-phone-square,
 .contact-email-square {
-    max-width: 48%;
-    background-color: #525252;
+    background-color: #00838f29;
     padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 0px;
-    padding-right: 0px;
     border-radius: 5px;
     margin: 3px;
     color: white;
+    box-shadow: 0 0 3px 0.3px #888888;
+    margin: 10px 10px 0px 10px;
 }
 
 
 .contact-phone-square:hover {
     background-color: #525252;
     color: white;
+    background-color: #b3e5e9;
+    color: white;
+    box-shadow: 0 0 9px 2px #888888;
 }
 
 .contact-email-square:hover {
     background-color: #525252;
     color: white;
+    background-color: #b3e5e9;
+    color: white;
+    box-shadow: 0 0 9px 2px #888888;
 }
 
 .contact-element-icon {
@@ -115,4 +145,10 @@ padding-left: 0;
     display: flex;
     padding-top: 25px;
     padding: 5px;
+}
+
+.carousel-info {
+    border-radius: 15px;
+    box-shadow: 0 0 3px 0.3px #888888;
+    margin: 5px;
 }
